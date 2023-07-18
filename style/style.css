@@ -150,9 +150,9 @@ nav ul li a{
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
-.games-img-container img{
+/* .games-img-container img{
     width: 100%;
-}
+} */
 .card{
     position: relative;
 }
