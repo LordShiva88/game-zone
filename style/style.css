@@ -189,9 +189,38 @@ nav ul li a{
     font-size: 50px;
     color: #17bdf0;
 }
+
+/* download container start here */
+.download-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 220px;
+    margin-top: 100px;
+}
+.download-content{
+    text-align: center;
+    width: 50%;
+}
+/* .download-container img{
+    width: 600px
+} */
+.download-image-container{
+    text-align: right;
+    position: relative;
+}
+.download-image-container img{
+    width: 600px;
+}
+.img-1 img{
+    width: 250px;
+    position: absolute;
+    margin: -250px;
+    left: 120px;
+}
 /* Responsive style for mobile */
 @media screen and (max-width: 576px) {
-    nav ul, nav, .banner{
+    nav ul, nav, .banner, .download-container{
         flex-direction: column;
     }
     .banner, .games-container{
@@ -207,5 +236,20 @@ nav ul li a{
     }
     .games-img-container{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .download-container{
+        padding: 40px;
+        margin-top: 20px;
+    }
+    .download-image-container img{
+        width:300px;
+    }
+    .download-content{
+        width: 100%;
+    }
+    .img-1 img{
+        width: 150px;
+        bottom: 200px;
+        right: -200px;
     }
 }
