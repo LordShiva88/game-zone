@@ -92,7 +92,7 @@ nav ul li a{
 /* Banner section style start here */
 .banner{
     display: flex;
-    background-image: url("images/banner.png");
+    background-image: url("../images/banner.png");
     background-repeat: no-repeat;
     justify-content: space-around;
     align-items: center;
