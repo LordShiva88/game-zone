@@ -218,6 +218,43 @@ nav ul li a{
     margin: -250px;
     left: 120px;
 }
+
+
+
+/* footer section style */
+.footer-container{
+    padding: 80px;
+    background: #0B0223;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+.footer-link ul{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-link ul li{
+    list-style: none;
+}
+
+.footer-link li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.60); 
+}
+.icon-container{
+    margin-top: 50px;
+}
+.fa-brands{
+    font-size: 40px;
+}
+
 /* Responsive style for mobile */
 @media screen and (max-width: 576px) {
     nav ul, nav, .banner, .download-container{
