@@ -194,6 +194,7 @@ nav ul li a{
 center{
     text-align: center;
 }
+
 /* download container start here */
 .download-container{
     display: flex;
@@ -206,15 +207,13 @@ center{
     text-align: center;
     width: 50%;
 }
-/* .download-container img{
-    width: 600px
-} */
+
 .download-image-container{
     text-align: right;
     position: relative;
 }
 .download-image-container img{
-    width: 600px;
+    width: 100%;
 }
 .img-1 img{
     width: 250px;
@@ -266,20 +265,22 @@ center{
     font-size: 20px;
     font-weight: 600;
 }
+
 .career-content{
     width: 50%;
 }
+
 .right-para{
     text-align: right;
 }
+
 .career-img{
     width: 50%;
 }
+
 .career-img img{
     width: 100%;
 }
-
-
 
 /* footer section style */
 .footer-container{
@@ -326,6 +327,7 @@ center{
 }
 
 /* Responsive for tablet */
+
 @media screen and (min-width: 375px) and (max-width: 768px) {
     nav ul, 
     nav, 
@@ -354,9 +356,6 @@ center{
     .download-container{
         padding: 40px;
         margin-top: 20px;
-    }
-    .download-image-container img{
-        width:300px;
     }
     .download-content{
         width: 100%;
