@@ -142,45 +142,41 @@ nav ul li a{
 /* Online Games section style start here */
 .games-container{
     padding: 0 240px;
-    text-align: center;
     margin-top: 100px;
 }
+
 .games-img-container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
     gap: 20px;
 }
-/* .games-img-container img{
-    width: 100%;
-} */
 .card{
     position: relative;
 }
 
 /* Hover style */
 .layer{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    bottom: 0;
     border-radius: 12px;
     background: transparent;
     transition: 1s;
     color: #fff;
+    position: absolute;
+    position: relative;
+}
+.hover-content{
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.layer:hover{
-    background:rgba(124, 106, 106, 0.4);
-}
-.hover-content{
     font-size: 30px;
-    bottom: 50;
     position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    top: 0;
+    bottom: 0;
     opacity: 0;
     transition: 2s;
+    background-color: rgba(255, 3, 3, 0.3);
 }
 .hover-content:hover{
     opacity: 1;
@@ -189,7 +185,9 @@ nav ul li a{
     font-size: 50px;
     color: #17bdf0;
 }
-
+center{
+    text-align: center;
+}
 /* download container start here */
 .download-container{
     display: flex;
@@ -219,6 +217,34 @@ nav ul li a{
     left: 120px;
 }
 
+/* hover-icon section style start here */
+.hover-icon-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+    gap: 50px;
+    padding: 50px 240px;
+    margin-top: 100px;
+}
+.hover-item{
+    display: flex;
+    gap: 20px; 
+}
+.hover-item img{
+    width: 50px;
+}
+.hover-item:hover{
+    border: 1px solid var(--pink-color);
+    border-radius: 50px;
+    padding: 5px;
+    object-fit: cover;
+    transition: 1s;
+    color: var(--pink-color);
+}
+
+
+
+
 
 
 /* footer section style */
@@ -228,16 +254,14 @@ nav ul li a{
     color: white;
     text-align: center;
     margin-top: 100px;
-
 }
-
 .footer-link ul{
     display: flex;
     align-items: center;
     justify-content: center; 
     gap: 50px;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .footer-link ul li{
@@ -254,10 +278,26 @@ nav ul li a{
 .fa-brands{
     font-size: 40px;
 }
-
+.footer-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-para{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 500;
+}
 /* Responsive style for mobile */
 @media screen and (max-width: 576px) {
-    nav ul, nav, .banner, .download-container{
+    nav ul, 
+    nav, 
+    .banner, 
+    .download-container,
+    .games-img-container
+    {
         flex-direction: column;
     }
     .banner, .games-container{
@@ -271,8 +311,9 @@ nav ul li a{
         flex-direction: column-reverse;
         text-align: center;
     }
-    .games-img-container{
-        grid-template-columns: repeat(1, 1fr);
+    
+    .games-img-container img{
+       width: 100%;
     }
     .download-container{
         padding: 40px;
@@ -288,5 +329,8 @@ nav ul li a{
         width: 150px;
         bottom: 200px;
         right: -200px;
+    }
+    .footer-link ul{
+        flex-wrap: wrap;
     }
 }
