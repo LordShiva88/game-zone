@@ -324,8 +324,9 @@ center{
     font-size: 16px;
     font-weight: 500;
 }
-/* Responsive style for mobile */
-@media screen and (max-width: 576px) {
+
+/* Responsive for tablet */
+@media screen and (min-width: 375px) and (max-width: 768px) {
     nav ul, 
     nav, 
     .banner, 
@@ -334,7 +335,7 @@ center{
     .career-container
     {
         flex-direction: column;
-    }
+    }                   
     .banner, .games-container{
         padding: 40px;
     }
@@ -342,7 +343,7 @@ center{
         width: 100%;
     }
     .gamer-container{
-        padding: 40px;
+        padding: 4px;
         flex-direction: column-reverse;
         text-align: center;
     }
@@ -365,8 +366,6 @@ center{
         bottom: 200px;
         right: -200px;
     }
-
-    
     .career-container{
         padding: 40px;
     }
